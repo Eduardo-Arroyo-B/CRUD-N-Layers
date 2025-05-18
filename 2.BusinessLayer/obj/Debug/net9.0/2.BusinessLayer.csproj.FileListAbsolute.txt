@@ -1,0 +1,15 @@
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.deps.json
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.pdb
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\bin\Debug\net9.0\3.Data.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\bin\Debug\net9.0\3.Data.pdb
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.AssemblyInfo.cs
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.Busine.032FD615.Up2Date
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\refint\2.BusinessLayer.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.pdb
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\ref\2.BusinessLayer.dll
