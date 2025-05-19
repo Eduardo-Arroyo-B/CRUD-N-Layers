@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\3.Data\\3.Data.csproj": {}
+    "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\3.Data\\3.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\3.Data\\3.Data.csproj": {
+    "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\3.Data\\3.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\3.Data\\3.Data.csproj",
+        "projectUniqueName": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\3.Data\\3.Data.csproj",
         "projectName": "3.Data",
-        "projectPath": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\3.Data\\3.Data.csproj",
-        "packagesPath": "C:\\Users\\GAMERTECH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\3.Data\\obj\\",
+        "projectPath": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\3.Data\\3.Data.csproj",
+        "packagesPath": "C:\\Users\\aedua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\3.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\GAMERTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\aedua\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,9 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -67,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\GAMERTECH\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\aedua\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

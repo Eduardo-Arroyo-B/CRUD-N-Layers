@@ -15,4 +15,14 @@ public class ProductBL
     {
         return _productDL.GetAll();
     }
+
+    public bool CreateProduct(Product product)
+    {
+        // Validaciones de negocio si hay alguna
+        if (string.IsNullOrEmpty(product.Name) || product.Price <= 0)
+        {
+            return false;
+        }
+        return _productDL.CreateProduct(product);
+    }
 }
