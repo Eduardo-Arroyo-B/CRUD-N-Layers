@@ -11,9 +11,9 @@ public class ProductBL
         _productDL = productDl;
     }
     
-    public List<Product> GetAll()
+    public async Task<List<Product>> GetAllAsync()
     {
-        return _productDL.GetAll();
+        return await _productDL.GetAllAsync();
     }
 
     public bool CreateProduct(Product product)
@@ -24,5 +24,15 @@ public class ProductBL
             return false;
         }
         return _productDL.CreateProduct(product);
+    }
+    
+    public bool UpdateProduct(Product product)
+    {
+        // Validaciones de negocio si hay alguna
+        if (string.IsNullOrEmpty(product.Name) || product.Price <= 0 || product.IdProduct <= 0)
+        {
+            return false;
+        }
+        return _productDL.UpdateProduct(product);
     }
 }

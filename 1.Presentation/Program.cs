@@ -11,6 +11,8 @@ builder.Services.AddOpenApi();
 var sqlString = builder.Configuration.GetConnectionString("sqlString");
 builder.Services.AddScoped<ProductDL>(c => new ProductDL(sqlString!));
 builder.Services.AddScoped<ProductBL>();
+builder.Services.AddScoped<UsersDL>(c => new UsersDL(sqlString!));
+builder.Services.AddScoped<UsersBL>();
 
 var app = builder.Build();
 

@@ -167,3 +167,4 @@ C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\1.Presentation\obj\Debug\n
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\1.Presentation\obj\Debug\net9.0\1.Presentation.pdb
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\1.Presentation\obj\Debug\net9.0\1.Presentation.genruntimeconfig.cache
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\1.Presentation\obj\Debug\net9.0\ref\1.Presentation.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\1.Presentation\obj\Debug\net9.0\1.Presentation.sourcelink.json

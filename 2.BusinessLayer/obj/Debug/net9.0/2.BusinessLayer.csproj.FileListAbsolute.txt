@@ -29,3 +29,4 @@ C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\2.BusinessLayer\obj\Debug\
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\2.BusinessLayer\obj\Debug\net9.0\refint\2.BusinessLayer.dll
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.pdb
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\2.BusinessLayer\obj\Debug\net9.0\ref\2.BusinessLayer.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\2.BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.sourcelink.json

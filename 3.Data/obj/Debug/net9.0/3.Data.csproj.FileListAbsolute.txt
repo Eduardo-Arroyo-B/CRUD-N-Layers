@@ -23,3 +23,4 @@ C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\3.Data\obj\Debug\net9.0\3.
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\3.Data\obj\Debug\net9.0\refint\3.Data.dll
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\3.Data\obj\Debug\net9.0\3.Data.pdb
 C:\Users\aedua\OneDrive\Desktop\Proyectos\C#\N Layers\3.Data\obj\Debug\net9.0\ref\3.Data.dll
+C:\Users\GAMERTECH\RiderProjects\N Layer testing\3.Data\obj\Debug\net9.0\3.Data.sourcelink.json
