@@ -1806,34 +1806,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GAMERTECH\\.nuget\\packages\\": {}
+    "C:\\Users\\aedua\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\1.Presentation\\1.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\1.Presentation\\1.Presentation.csproj",
       "projectName": "1.Presentation",
-      "projectPath": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\1.Presentation\\1.Presentation.csproj",
-      "packagesPath": "C:\\Users\\GAMERTECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\1.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\1.Presentation\\1.Presentation.csproj",
+      "packagesPath": "C:\\Users\\aedua\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\1.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GAMERTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\aedua\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\2.BusinessLayer\\2.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\GAMERTECH\\RiderProjects\\N Layer testing\\2.BusinessLayer\\2.BusinessLayer.csproj"
+            "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\2.BusinessLayer\\2.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\aedua\\OneDrive\\Desktop\\Proyectos\\C#\\N Layers\\2.BusinessLayer\\2.BusinessLayer.csproj"
             }
           }
         }
@@ -1846,9 +1844,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1878,7 +1876,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\GAMERTECH\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\aedua\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

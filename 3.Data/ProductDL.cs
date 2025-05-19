@@ -37,4 +37,22 @@ public class ProductDL
         }
         return products;
     }
+
+    public bool CreateProduct(Product product)
+    {
+        using (SqlConnection cn = new SqlConnection(_connectionString))
+        {
+            string query = "INSERT INTO Product (Name, Price) VALUES (@Name, @Price)";
+            
+            SqlCommand cmd = new SqlCommand(query, cn);
+            
+            cmd.Parameters.AddWithValue("@Name", product.Name);
+            
+            cmd.Parameters.AddWithValue("@Price", product.Price);
+            
+            cn.Open();
+            int rows = cmd.ExecuteNonQuery();
+            return rows > 0;
+        }
+    }
 }
