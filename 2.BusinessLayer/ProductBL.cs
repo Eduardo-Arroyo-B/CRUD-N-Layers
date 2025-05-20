@@ -10,7 +10,7 @@ public class ProductBL
     {
         _productDL = productDl;
     }
-    
+
     public async Task<List<Product>> GetAllAsync()
     {
         return await _productDL.GetAllAsync();
@@ -25,7 +25,7 @@ public class ProductBL
         }
         return _productDL.CreateProduct(product);
     }
-    
+
     public bool UpdateProduct(Product product)
     {
         // Validaciones de negocio si hay alguna
@@ -34,5 +34,15 @@ public class ProductBL
             return false;
         }
         return _productDL.UpdateProduct(product);
+    }
+    
+    public bool DeleteProduct(int idProduct)
+    {
+        // Validaciones de negocio si hay alguna
+        if (idProduct <= 0)
+        {
+            return false;
+        }
+        return _productDL.DeleteProduct(idProduct);
     }
 }
