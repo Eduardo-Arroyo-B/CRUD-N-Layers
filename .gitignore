@@ -1,37 +1,43 @@
-﻿# Build Folders
+﻿Build Folders,
 bin/
 obj/
 
-# Rider specific files
+Rider specific files,
 .idea/
 *.sln.iml
 
-# User-specific files
+User-specific files,
 *.user
 *.suo
 
-# VS Code folders
+VS Code folders,
 .vscode/
 
-# Logs
+Logs,
 *.log
 
-# Packages
+Packages,
 *.nupkg
 *.snupkg
 *.nuspec
 *.psmdcp
 
-# DLLs and executables
+DLLs and executables,
 *.dll
 *.exe
 *.pdb
 
-# Publish output
+Publish output,
 publish/
 
-# Rider caches
+Rider caches,
 .idea/
 
-# Other
+Other,
 *.vs/
+
+NuGet package folders,
+*.nuget/
+/obj/
+/bin/
+project.assets.json
