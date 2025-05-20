@@ -16,4 +16,9 @@ public class UsersBL
     {
         return await _usersDL.GetAllAsync();
     }
+    
+    public bool CreateUser(users? user)
+    {
+        return _usersDL.CreateUser(user);
+    }
 }
