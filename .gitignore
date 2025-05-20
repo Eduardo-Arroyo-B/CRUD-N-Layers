@@ -35,3 +35,10 @@ publish/
 
 # Other
 *.vs/
+
+# NuGet package folders
+*.nuget/
+**/obj/
+**/bin/
+project.assets.json
+
