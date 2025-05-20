@@ -8,6 +8,7 @@
 
 # Build results
 
+
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -155,3 +156,4 @@ project.nuget.cache
 # Build folders (en minúscula también por si acaso)
 bin/
 obj/
+
