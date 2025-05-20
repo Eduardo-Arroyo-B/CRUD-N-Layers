@@ -14,7 +14,7 @@ namespace _1.Presentation.Controllers
         {
             _productBl = productBl;
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
@@ -30,12 +30,12 @@ namespace _1.Presentation.Controllers
             if (created)
             {
                 return Ok(new { message = "Producto creado exitosamente", product });
-                
+
             }
 
             return BadRequest(new { message = "Error al crear el producto" });
         }
-        
+
         [HttpPut]
         public IActionResult UpdateProduct([FromForm] Product product)
         {
@@ -44,10 +44,23 @@ namespace _1.Presentation.Controllers
             if (updated)
             {
                 return Ok(new { message = "Producto actualizado exitosamente" });
-                
+
             }
 
             return BadRequest(new { message = "Error al actualizar el producto" });
+        }
+        
+        public IActionResult DeleteProduct(int idProduct)
+        {
+            var deleted = _productBl.DeleteProduct(idProduct);
+
+            if (deleted)
+            {
+                return Ok(new { message = "Producto eliminado exitosamente" });
+
+            }
+
+            return BadRequest(new { message = "Error al eliminar el producto" });
         }
     }
 }
