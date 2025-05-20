@@ -61,6 +61,6 @@ namespace _1.Presentation.Controllers
             }
 
             return BadRequest(new { message = "Error al eliminar el producto" });
-        }
+        } //hola
     }
 }
