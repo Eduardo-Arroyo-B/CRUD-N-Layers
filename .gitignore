@@ -42,7 +42,7 @@ x64/
 *.pidb
 *.svclog
 *.scc
-
+.idea
 # Visual C++ cache files
 ipch/
 *.aps
