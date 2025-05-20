@@ -1,4 +1,5 @@
-﻿using _3.DataLayer.Entities;
+﻿using System.Data;
+using _3.DataLayer.Entities;
 using Microsoft.Data.SqlClient;
 
 namespace _3.DataLayer;
@@ -36,4 +37,23 @@ public class UsersDL
         }
         return users;
     }
+    
+    public bool CreateUser(users? user)
+    {
+        using (SqlConnection cn = new SqlConnection(_connectionString))
+        {
+            string query = "INSERT INTO users (Name, Age, Address) VALUES (@Name, @Age, @Address) SELECT SCOPE_IDENTITY()";
+            
+            SqlCommand cmd = new SqlCommand(query, cn);
+            
+            cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 100).Value = user?.Name;
+            cmd.Parameters.Add("@Age", SqlDbType.Int).Value = user?.Age;
+            cmd.Parameters.Add("@Address", SqlDbType.NVarChar, 100).Value = user?.Address;
+            
+            cn.Open();
+            int rows = cmd.ExecuteNonQuery();
+            return rows > 0;
+        }
+    }
 }
+
