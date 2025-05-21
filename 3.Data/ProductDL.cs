@@ -1,4 +1,5 @@
-﻿using _3.DataLayer.Entities;
+﻿using System.Data;
+using _3.DataLayer.Entities;
 using Microsoft.Data.SqlClient;
 
 namespace _3.DataLayer;
@@ -11,26 +12,24 @@ public class ProductDL
     {
         _connectionString = connectionString;
     }
-    
-    public List<Product> GetAll()
+
+    public async Task<List<Product>> GetAllAsync()
     {
         var products = new List<Product>();
-
         using (var cn = new SqlConnection(_connectionString))
         {
-            cn.Open();
+            await cn.OpenAsync();
             var command = new SqlCommand("SELECT IdProduct, Name, Price FROM Product", cn);
-            command.CommandType = System.Data.CommandType.Text;
 
-            using (var reader = command.ExecuteReader())
+            using (var reader = await command.ExecuteReaderAsync())
             {
-                while (reader.Read())
+                while (await reader.ReadAsync())
                 {
                     products.Add(new Product()
                     {
-                        IdProduct = int.Parse( reader["IdProduct"].ToString()!),
-                        Name = reader["Name"].ToString()!,
-                        Price = int.Parse(reader["Price"].ToString()!)
+                        IdProduct = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        Price = reader.GetInt32(2)
                     });
                 }
             }
@@ -43,13 +42,44 @@ public class ProductDL
         using (SqlConnection cn = new SqlConnection(_connectionString))
         {
             string query = "INSERT INTO Product (Name, Price) VALUES (@Name, @Price)";
-            
+
             SqlCommand cmd = new SqlCommand(query, cn);
-            
-            cmd.Parameters.AddWithValue("@Name", product.Name);
-            
-            cmd.Parameters.AddWithValue("@Price", product.Price);
-            
+
+            cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 100).Value = product.Name;
+            cmd.Parameters.Add("@Price", SqlDbType.Int).Value = product.Price;
+
+            cn.Open();
+            int rows = cmd.ExecuteNonQuery();
+            return rows > 0;
+        }
+    }
+
+    public bool UpdateProduct(Product product)
+    {
+        using (SqlConnection cn = new SqlConnection(_connectionString))
+        {
+            string query = "UPDATE Product SET Name = @Name, Price = @Price WHERE IdProduct = @IdProduct";
+
+            SqlCommand cmd = new SqlCommand(query, cn);
+
+            cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 100).Value = product.Name;
+            cmd.Parameters.Add("@Price", SqlDbType.Int).Value = product.Price; ;
+
+            cn.Open();
+            int rows = cmd.ExecuteNonQuery();
+            return rows > 0;
+        }
+    }
+    public bool DeleteProduct(int idProduct)
+    {
+        using (SqlConnection cn = new SqlConnection(_connectionString))
+        {
+            string query = "DELETE FROM Product WHERE IdProduct = @IdProduct";
+
+            SqlCommand cmd = new SqlCommand(query, cn);
+
+            cmd.Parameters.Add("@IdProduct", SqlDbType.Int).Value = idProduct;
+
             cn.Open();
             int rows = cmd.ExecuteNonQuery();
             return rows > 0;
